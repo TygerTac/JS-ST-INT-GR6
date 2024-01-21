@@ -1,0 +1,9 @@
+.swiper {
+    height: 60vh;
+    text-align: center;
+    font-size: 10px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

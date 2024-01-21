@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de Harry Potter</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+    <link rel="stylesheet" ref="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.10.1/simple-lightbox.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" /> <!-- l'icone de dark-mode-->
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <section class="page">
+        <div class="logo"> <!-- à demander au prof -->
+        <header> <!-- Haut du Page -->
+            <img class="logohry" src="img/logo.png" alt="Logo de la page Harry potter">
+            <h1 class="titre">Harry Potter et l'école</h1>
+            <img class="logohry" src="img/logo.png" alt="Logo de la page Harry potter">
+        </header>
+        </div>
+        <div class="boxswiper">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <!-- on peut mettre deux class pour le css?!!!-->
+                    <div class="swiper-slide swiper-lumiere">
+                        <div class="textes-slider">
+                            <p class="nom-slider">Visiter les classe de magie!</p>
+                            <p class="desscription-slider">Journée Porte Ouverte</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-dark">
+                        <div class="textes-slider">
+                            <p class="nom-slider">Des activités à faire!</p>
+                            <p class="desscription-slider">Journée Porte Ouverte</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-nature">
+                        <div class="textes-slider">
+                            <p class="nom-slider">La magie, c'est une passion</p>
+                            <p class="desscription-slider">Journée Porte Ouverte</p>
+                        </div>
+                    </div>
+                </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        </div>
+        <nav> <!-- Navigation-->
+            <div class="onglets">
+                <a href="bundle.html">Bundles Shop</a>
+                <a href="collectiondecartes.html">Collection de Cartes</a>
+                <a href="Packetsaouvrir.html">Pack à Ouvrir</a>
+            </div>
+        </nav>
+    </section>
+    <main> <!-- Main -->
+        <!-- C'est pas celui la apparement?
+        <section class="accordeon open">
+            <div class="titreaccordeon">
+                <p>Contenu des cours de magie</p>
+                <i class="bi bi-arrow-down-short"></i>
+            </div>
+            <div class="contenuaccordeon">
+                <ul>
+                    <li>Nature</li>
+                    <li>Lumiere</li>
+                    <li>Tenebre</li>
+                    <li>Eau</li>
+                    <li>Feu</li>   
+                </ul>
+            </div>
+        </section>
+        <section class="accordeon open">
+            <div class="titreaccordeon">
+                <p>Contenu des cours d'alchemie</p>
+                <i class="bi bi-arrow-down-short"></i>
+            </div>
+            <div class="contenuaccordeon">
+                <ul>
+                    <li>Négociation</li>
+                    <li>Communications</li>
+                    <li>Alchemie temporelle</li>
+                    <li>Pratique</li>
+                    <li>Marketing</li>   
+                </ul>
+            </div>
+        </section>
+        </div>
+        -->
+        <!-- J'ai toujours rien compris au rendu à faire à propos du tabs, J'ai literalement du vérifier sur youtube et codepen car le powerpoint ne m'aider pas pour comment faire et si c'est faux, c'est un vrai problème la.-->
+        <!-- ducoups c'est 5 tabs mais il n'ya que quatre magique principale doncvbon-->
+        <div class="les-tabs">
+            <div class="tabs-container">
+                <ul class="tabs">
+                    <li class="tab tab-active tab-feu">Feu</li>
+                    <li class="tab tab-eau">Eau</li>
+                    <li class="tab tab-terre">Terre</li>
+                    <li class="tab tab-air">Air</li>
+                    <li class="tab tab-metal">Metal</li>
+                </ul>
+        
+                <div class="content-container">
+                    <div class="content content-feu"> 
+                        <p>Le feu, c'est du feu</p> <!-- Je savais pas quoi écrire mais ça doit passer-->
+                    </div>
+                    <div class="content content-eau">
+                        <p>L'eau, c'est de l'eau.</p> 
+                    </div>
+                    <div class="content content-terre">
+                        <p>La terre, c'est de la terre.</p>
+                    </div>
+                    <div class="content content-air">
+                        <p>L'air, c'est de l'air.</p>
+                    </div>
+                    <div class="content content-metal">
+                        <p>Le metal, c'est du métal</p> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer> <!-- à refaire avec des liens-->
+        <div class="colonnes">
+            <div class="colonne">
+                <p>FAQ</p>
+                <p>Blog</p>
+                <p>CDU</p>
+                <p>SOS</p>
+            </div>
+            <div class="colonne">
+                <p>Compte</p>
+                <p>S'enregistrer</p>
+                <p class="bi bi-brightness-high-fill" id="toggledark">Modifier le Mode</p>
+                <a href="index2.html">Nous contacter</a>
+            </div>
+        </div>
+        <h5 class="finorga">©2023 Ferhat Inc.</h5>
+    </footer>
+<!--
+    <section class="accordeon">
+        <div class="titre">
+            <p>Contenu des cours DW</p>
+            <img src="img/cardback.jpg" alt="Fleche">
+        </div>
+        <div class="contenu">
+            <ul>
+                <li>Algo</li>
+                <li>HTML/CSS</li>
+                <li>Javascript</li>
+                <li>PHP/MYSQL</li>
+                <li>Réseau</li>   
+            </ul>
+        </div>
+    </section>
+    <section class="accordeon">
+        <div class="titre">
+            <p>Contenu des cours DW</p>
+            <img src="img/cardback.jpg" alt="Fleche">
+        </div>
+        <div class="contenu">
+            <ul>
+                <li>Marketing</li>
+                <li>Communications</li>
+                <li>Webmarketing</li>
+                <li>Brand Content</li>
+                <li>Content Marketing</li>   
+            </ul>
+        </div>
+    </section>
+-->
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.10.1/simplelightbox.min.js"></script>
+<script src="script/darkmode.js"></script>
+<script src="script/main.js"></script>
+</body>
+</html>
